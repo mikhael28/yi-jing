@@ -1,0 +1,49 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+.gitignore
+.eslintrc*
+.prettierrc*
+jest.config.*
+*.test.ts
+*.spec.ts
+
+# Documentation (keep README.md)
+docs/
+examples/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+.nyc_output
+
+# Environment files
+.env*
+
+# Build artifacts that shouldn't be published
+*.tgz
+
+# TypeScript cache
+*.tsbuildinfo

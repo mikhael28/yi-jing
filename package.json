@@ -1,0 +1,54 @@
+{
+  "name": "yi-jing-oracle",
+  "version": "1.0.0",
+  "description": "The Yi Jing, the Oracle of Changes, available in algorithmic form along with the relevant metadata to understand it's meaning.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts"
+  },
+  "keywords": [
+    "yi-jing",
+    "i-ching",
+    "oracle",
+    "divination",
+    "chinese",
+    "philosophy",
+    "changes"
+  ],
+  "author": "Michael Nightingale",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikhael28/yi-jing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikhael28/yi-jing/issues"
+  },
+  "homepage": "https://github.com/mikhael28/yi-jing#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
