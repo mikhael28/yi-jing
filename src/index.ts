@@ -7,7 +7,7 @@
 import { trigrams, type Trigram } from './trigrams.js';
 import { hexagrams, type Hexagram } from './hexagrams.js';
 import { tao, type Tao } from './dao.js';
-import { LineCast } from './yarrow.js';
+// import { LineCast } from './yarrow.js';
 
 /**
  * A simple hello world function to demonstrate the yi-jing package
@@ -89,25 +89,25 @@ export function getAllTaoChapters(): Tao[] {
  * Cast a single line using the traditional yarrow stick method
  * @returns A string representing the line ('0' for broken, '1' for solid, 'o' for changing broken, 'x' for changing solid)
  */
-export function castLine(): string {
-  return LineCast();
-}
+// export function castLine(): string {
+//   return LineCast();
+// }
 
 /**
  * Cast a complete hexagram (6 lines) using the yarrow stick method
  * @returns An object containing the lines array and binary representation
  */
-export function castHexagram(): { lines: string[]; binary: string } {
-  const lines: string[] = [];
-  for (let i = 0; i < 6; i++) {
-    lines.push(LineCast());
-  }
-  // Convert to binary (1 for solid/changing solid, 0 for broken/changing broken)
-  const binary = lines
-    .map(line => (line === '1' || line === 'x' ? '1' : '0'))
-    .join('');
-  return { lines, binary };
-}
+// export function castHexagram(): { lines: string[]; binary: string } {
+//   const lines: string[] = [];
+//   for (let i = 0; i < 6; i++) {
+//     lines.push(LineCast());
+//   }
+//   // Convert to binary (1 for solid/changing solid, 0 for broken/changing broken)
+//   const binary = lines
+//     .map(line => (line === '1' || line === 'x' ? '1' : '0'))
+//     .join('');
+//   return { lines, binary };
+// }
 
 /**
  * Find hexagram by its binary representation
@@ -131,7 +131,7 @@ export default {
   getAllHexagrams,
   getTaoChapter,
   getAllTaoChapters,
-  castLine,
-  castHexagram,
+  // castLine,
+  // castHexagram,
   findHexagramByBinary,
 };

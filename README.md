@@ -47,7 +47,7 @@ Ready to integrate the ancient oracle into your modern application? Here's how t
 ## Installation
 
 ```bash
-npm install yi-jing
+npm install yi-jing-oracle
 ```
 
 ## Visual Presentation & Preview if Cloned/Forked
@@ -59,7 +59,7 @@ npm start
 ## Quick Start: Consulting the Oracle
 
 ```typescript
-import { helloWorld, getYiJingInfo, hexagrams } from 'yi-jing';
+import { helloWorld, getYiJingInfo, hexagrams } from 'yi-jing-oracle';
 
 // Begin your journey with the oracle
 console.log(helloWorld());

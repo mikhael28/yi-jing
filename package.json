@@ -1,6 +1,6 @@
 {
   "name": "yi-jing-oracle",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The Yi Jing, the Oracle of Changes, available in algorithmic form along with the relevant metadata to understand it's meaning.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
