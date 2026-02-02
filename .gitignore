@@ -8,6 +8,9 @@ yarn-error.log*
 dist/
 build/
 *.tgz
+DEPLOYMENT_CHECKLIST.md
+MYSTICAL_VOICE_SYSTEM.md
+VOICE_INTEGRATION.md
 
 # Runtime data
 pids
